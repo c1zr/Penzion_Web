@@ -1,0 +1,409 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* vyresetovat přednastvení prvků */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+a, input {
+    transition: all 0.3s ease-out;
+}
+
+img, 
+iframe {
+    vertical-align: top;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header img {
+    /* aby se obrázek zmenšoval se šířkou stránky */
+    width: 100%;
+    height: auto;
+}
+
+header .container {
+    width: 80%;
+    text-align: center;
+}
+
+.headerKontakty {
+    display: flex; /* posadí prvky vedle sebe */
+    justify-content: space-between; /* rozhodí prvky do krajů */
+    padding: 20px 0;
+    align-items: center; /* vycentrováníprvků flex ( telefonu a ikon) na výšku */
+}
+
+.tel, .pata p a, 
+.kontaktBox p a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tel:hover, 
+.pata p a:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+
+.ikony a {
+    color: #000;
+    font-size: 20px;
+}
+
+.fa-facebook-square:hover {
+    color: #1877F2;
+    transform: scale(1.3);
+}
+
+.fa-instagram-square:hover {
+    color: #E4405F;
+    transform: scale(1.3);
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    transform: scale(1.3);
+}
+
+.logo {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700; /* mám stažené pouze řezy 400 a 700 */
+    letter-spacing: 10px; /* vzdálenost mezi znaky (prostrkání) */
+}
+
+.logo:hover {
+    color: #b30000;
+}
+
+.menu {
+    margin: 40px 0;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu ul li a {
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 40px;
+    /* display: block; */
+    padding-bottom: 10px;
+}
+
+.menu ul li a:hover {
+    border-bottom: 3px solid #b30000;
+}
+
+.menu ul li:hover {
+    transform: scale(1.1); /* zvětší prvek seznamu / menu */
+}
+
+/* SECTION */
+
+.obsah {
+    /* width: 80%; */
+    text-align: center;
+    /* margin: 50px auto; */
+    padding: 50px 0 150px;
+}
+
+h1 {
+    /* width: 80%; */
+    padding: 50px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.obsah h2 {
+    /* width: 80%; */
+    padding-bottom: 30px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #b30000;
+    font-family: 'Playfair Display', serif;
+}
+
+.obsah p {
+    /* width: 80%; */
+    margin: 50px auto;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+.pata {
+    /* height: 500px; */
+    background: lightgray;
+    padding: 20px;
+}
+
+.pata .container {
+    width: 80%;
+    text-align: center;
+}
+
+.pata .kontakty {
+    padding: 30px 0;
+}
+
+.pataKontakty p {
+    line-height: 2;
+    /* margin: 5px 10px; */
+}
+
+.pata .kontakty {
+    padding: 25px 0;
+}
+
+.pata .kontakty a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.pata .kontakty .mail a, 
+.kontaktBox p b {
+    text-decoration: none;
+    font-weight: 700;
+    color: #b30000;
+}
+
+.pata .kontakty .mail a:hover {
+    color: #000;
+}
+
+.pata p i {
+    margin-right: 15px;
+}
+
+/* .pata .logo {
+    display: inline-block;
+} */
+
+.fa-map-marked-alt {
+    transform: rotate(45deg);
+}
+
+/* .fa-phone-alt {
+    transform: rotate(90deg);
+} */
+
+.pata .ikony a {
+    font-size: 30px;
+}
+
+.copy {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 40px;
+    padding: 15px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.btn:hover {
+    background: #b30000;
+    color: #fff;
+}
+
+/* Kontakt page */
+
+/* moje nastavení kontakt page */
+
+/* .kontakt .container {
+    text-align: center;
+    background: rgb(216, 216, 216);
+    padding: 20px 50px 100px 50px;
+}
+
+.kontaktContainer {
+    display: flex; 
+    justify-content: space-between;  */
+    /* padding: 20px 0;
+}
+
+.kontaktOtevreno ul li {
+    text-align: left;
+    list-style: none;
+}
+
+.kontaktKontakty p {
+    text-align: left;
+}
+
+.kontaktKontakty .kontakty a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.mapa {
+    background: rgb(216, 216, 216);
+    margin: 5px 0;
+    height: 100px;
+}
+
+.form {
+    background: rgb(216, 216, 216);
+    margin: 5px 0 100px 0;
+    height: 300px;
+} */
+
+/* .karty { */
+    /* margin-top: 100px; */
+    /* color: #000;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.karty p {
+    font-size: 20px;
+}
+
+.kontaktKontakty p, .kontaktOtevreno li {
+    line-height: 2;
+}
+
+.kontaktKontakty p i {
+    margin-right: 15px;
+} */
+
+/* Jakubův layout */
+
+.kontakt {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.kontaktGrey {
+    background: #eaeaea;
+    padding-bottom: 50px;
+}
+
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 40px 40px;
+    line-height: 1.5;
+}
+
+.kontaktBox p i {
+    width: 30px;
+}
+
+.kartyJakub {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.kontakt iframe {
+    width: 100%;    
+    margin: 5px 0;
+}
+
+.kontaktGrey h2 {
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+.kontaktGrey input[type="text"], 
+.kontaktGrey input[type="email"], 
+.kontaktGrey textarea,
+.kontaktGrey select {
+    display: block;
+    padding: 10px;  
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    outline-color: #b30000;
+}
+
+.kontaktGrey textarea {
+    height: 120px;
+}
+
+.kontaktGrey input[type="submit"] {
+    background: #b30000;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #b30000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.kontaktGrey input[type="submit"]:hover {
+    background: transparent;
+    color: #b30000;
+    cursor: pointer;
+}
+
+.rezervace .kontaktGrey {
+    text-align: center;
+}
+
+::placeholder {
+    color: #b30000;
+}
+
+.kontaktGrey select {
+    color: #b30000;
+}
+
+.rezervace {
+    margin: 5px 0;
+}
+
+/* Galerie */
+
+.galerie {
+    padding-bottom: 100px;
+}
+
+.galerie a {
+    width: 24%;
+    margin: 3px;
+}
+
+.galerie img {
+    width: 100%;
+}
+
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
